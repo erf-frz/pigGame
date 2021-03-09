@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> pig Game</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="myPigStyle.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+            <button class="rules-btn">Game Rules</button>
+            <div class="dialog-box">
+                <button type="button" class="close">X</button>
+                <div>
+                    1. A player rolls the dices and his current score will be shown in the current box. The more he rolls the dices,a higher
+                    score is added to the current box. If the player feels happy with the score, he clicks the hold button to keep it and
+                    then it is the next player's turn. <br />
+                    2. A player loses his ENTIRE current score when at least one of the dices is 1. After that, it's the next player's
+                    turn.<br />
+                    3. The players can set the winning score, so that they can change the predefined winning score of 100.
+                </div>
+               
+            </div>
+        <div class="wrapper clearFix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1 </div>
+                <div class="player-score" id="score-0"> 43 </div>
+                <div class="player-current--box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-score-0">0</div>
+                </div>
+            </div>
+             <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2 </div>
+                <div class="player-score" id="score-1"> 67</div>
+                <div class="player-current--box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-score-1">0</div>
+                </div>
+            
+            </div>
+            <button id="btn-new"><i class="ion-ios-plus-outline"></i> NEW GAME</button>
+            <button id="btn-roll"><i class="ion-ios-loop"></i>ROLL DICE</button>
+            <button id="btn-hold"><i class="ion-ios-download-outline"></i>HOLD</button>
+            
+            <img id="dice-1" class="dice" src="dice-1.png" alt="dice"/> 
+            <img id="dice-2" class="dice" src="dice-2.png" alt="dice"/>
+            
+            <input id="winningScore" type="text" placeholder="winning score" processor="challenges.js" method="get" value=""/>
+        </div>
+            
+       <!-- <script src="f.js"></script> -->
+        <script src="challenges.js"></script>
+        
+    </body>
+</html>
+
+
+            

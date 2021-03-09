@@ -1,0 +1,211 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+
+body
+{
+    background-image:url(sky.jpg);
+    background-position: center;
+    width:100vw;
+    height:100vh;
+    background-size: 100% 100vh;
+    font-family: lato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper
+{
+    width: 66.3vw;
+    height:74.8vh;
+    position:absolute;
+    box-shadow: 0px 5px 10px #fff0f8ff;  
+}
+
+.player-0-panel, .player-1-panel
+{
+  float:left;
+  width:50%;
+  height:78.6vh;
+  background-color:#ffffff;
+ 
+    
+}
+
+.clearFix::after
+{
+  content: "";
+  display:block;
+  clear:both;
+}
+
+.player-name,.player-score
+{
+    font-size: 3.65vw  ; 
+    padding-top:7.48vh;
+   
+    text-align: center;
+
+}
+
+.player-current--box
+{
+background-color: #ffcccc;
+  text-align: center;
+  width:12vw;
+  height:auto;
+  margin-left: 11vw;
+  margin-top: 16vh;
+  padding-top: 1.2vh;
+  padding-bottom: 1.2vh;     
+}
+
+.player-current-label
+{
+    font-size: 1.6vw; 
+    color:black;
+    text-transform: uppercase; 
+}
+
+.player-current-score
+{
+   font-size:1.9vw; 
+    color:#ff3333;
+    margin-top:2.5vh;
+}
+
+button
+{
+ 
+color: #555;
+ font-size:1.9vw; 
+ background: none;
+ left: 50%;
+ cursor: pointer;   
+ font-weight: 300; 
+ transition: color 0.3s;  
+ position:absolute;   
+ transform: translateX(-50%);  
+ width: 29.3vw; 
+}
+
+button:hover{font-weight: 600;}   
+button:hover i {margin-right:1.75vw;}    
+button:focus {
+    outline: none;
+}
+
+i{
+ color: #EB4D4D;
+ display: inline-block;
+ margin-right:1vw;
+ font-size: 2.3vw;
+ line-height: 1;
+ vertical-align: baseline;
+margin-top: -0.5vh;
+transition: margin 0.3s; 
+}
+
+#btn-new{top:5.05vh;}
+#btn-roll{top:50.5vh;}
+#btn-hold{top:58.1vh;}
+  
+.dice
+{
+width:6vw;
+height: auto;
+position:absolute;
+left:45%;
+box-shadow: 0px 10px 60px lightgray;
+
+}
+ 
+#dice-1
+{top:20vh;}
+
+#dice-2
+{top:34vh;}
+
+
+.winner{background-color:#e6f2ff;}
+
+.winner .player-name
+{
+ font-weight: 300; 
+ color: #EB4D4D;;   
+}
+
+.active
+{
+ background-color: #e0ebeb;
+    
+}
+
+.active .player-name{font-weight: 300;}
+
+.active .player-name::before
+{
+    content: "\2022  ";
+    font-size: 3.89vw;
+    color: #EB4D4D;  
+}
+
+
+#winningScore
+{
+    position: absolute;
+    top:65.7vh;
+    left:40%;
+    width: 15vw;
+    height:6.3vh;
+    font-family: Lato;
+    font-size: 1.8vw;
+    text-align: center;
+}
+
+#winningScore:focus{outline:none;}
+
+.rules-btn{
+    z-index: 100;
+    margin-top: -90vh;
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    width:15vw;
+    height: 7vh;
+    border-radius: 5px;
+}
+
+.dialog-box{
+    background-color: rgba(255, 255, 255, 0.966);
+    z-index: 200;
+    width:40vw;
+    height: auto;
+    padding:2%;
+    font-size: 1.5vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    display:none;
+}
+.close{
+  position: relative;
+  left:40vw;
+  bottom: 1vh;  
+}
+
+
+
+
+
+
+
+
+
+
